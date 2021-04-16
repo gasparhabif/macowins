@@ -7,6 +7,8 @@
 
 ### Diagrama de Clases
 
+![Diagrama de Clases](diagrama.png)
+
 ### Explicación
 
 Se considera que la clase Tienda corresponde a los distintos locales de Macowins que podrían llegar a registrar ventas.
