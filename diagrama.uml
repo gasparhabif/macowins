@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/Users/gaspihabif/UTN/DDS/macowins/src/main/java/com/macowins</OriginalElement>
+  <nodes>
+    <node x="697.1875" y="182.0">com.macowins.prendas.estados.Liquidacion</node>
+    <node x="599.4375" y="593.5">com.macowins.medioDePago.Efectivo</node>
+    <node x="21.5" y="798.0">com.macowins.Tienda</node>
+    <node x="313.4375" y="571.0">com.macowins.medioDePago.Tarjeta</node>
+    <node x="0.0" y="494.0">com.macowins.Venta</node>
+    <node x="99.2061011904762" y="387.0">com.macowins.medioDePago.MedioDePago</node>
+    <node x="173.1875" y="105.0">com.macowins.prendas.Prenda</node>
+    <node x="210.1875" y="0.0">com.macowins.prendas.estados.EstadoPrenda</node>
+    <node x="431.1875" y="160.0">com.macowins.prendas.estados.Promocion</node>
+    <node x="963.1875" y="193.5">com.macowins.prendas.estados.Nuevo</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.macowins.prendas.estados.Promocion" target="com.macowins.prendas.estados.EstadoPrenda" relationship="REALIZATION">
+      <point x="0.0" y="-61.0" />
+      <point x="554.1875" y="85.0" />
+      <point x="805.0186011904761" y="85.0" />
+      <point x="805.0186011904761" y="75.0" />
+      <point x="415.1875" y="75.0" />
+      <point x="82.0" y="27.5" />
+    </edge>
+    <edge source="com.macowins.medioDePago.MedioDePago" target="com.macowins.prendas.Prenda" relationship="DEPENDENCY">
+      <point x="2.8421709430404007E-14" y="-27.5" />
+      <point x="232.20610119047623" y="367.0" />
+      <point x="354.2686011904762" y="367.0" />
+      <point x="354.2686011904762" y="357.0" />
+      <point x="351.6875" y="357.0" />
+      <point x="59.5" y="116.0" />
+    </edge>
+    <edge source="com.macowins.prendas.estados.Liquidacion" target="com.macowins.prendas.estados.EstadoPrenda" relationship="REALIZATION">
+      <point x="0.0" y="-39.0" />
+      <point x="820.1875" y="85.0" />
+      <point x="805.0186011904761" y="85.0" />
+      <point x="805.0186011904761" y="75.0" />
+      <point x="415.1875" y="75.0" />
+      <point x="82.0" y="27.5" />
+    </edge>
+    <edge source="com.macowins.Tienda" target="com.macowins.Venta" relationship="DEPENDENCY">
+      <point x="59.5" y="-61.0" />
+      <point x="200.0" y="773.0" />
+      <point x="210.75" y="773.0" />
+      <point x="70.25" y="127.0" />
+    </edge>
+    <edge source="com.macowins.Venta" target="com.macowins.medioDePago.MedioDePago" relationship="TO_ONE">
+      <point x="105.375" y="-127.0" />
+      <point x="245.875" y="473.0" />
+      <point x="232.2061011904762" y="473.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.macowins.medioDePago.Efectivo" target="com.macowins.medioDePago.MedioDePago" relationship="REALIZATION">
+      <point x="-66.5" y="-27.5" />
+      <point x="665.9375" y="473.0" />
+      <point x="589.4375" y="473.0" />
+      <point x="589.4375" y="463.0" />
+      <point x="320.8727678571429" y="463.0" />
+      <point x="88.66666666666666" y="27.5" />
+    </edge>
+    <edge source="com.macowins.Venta" target="com.macowins.prendas.Prenda" relationship="DEPENDENCY">
+      <point x="-35.125" y="-127.0" />
+      <point x="105.375" y="473.0" />
+      <point x="88.7061011904762" y="473.0" />
+      <point x="88.7061011904762" y="367.0" />
+      <point x="354.2686011904762" y="367.0" />
+      <point x="354.2686011904762" y="357.0" />
+      <point x="351.6875" y="357.0" />
+      <point x="59.5" y="116.0" />
+    </edge>
+    <edge source="com.macowins.prendas.estados.Nuevo" target="com.macowins.prendas.estados.EstadoPrenda" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="1086.1875" y="85.0" />
+      <point x="805.0186011904761" y="85.0" />
+      <point x="805.0186011904761" y="75.0" />
+      <point x="415.1875" y="75.0" />
+      <point x="82.0" y="27.5" />
+    </edge>
+    <edge source="com.macowins.Venta" target="com.macowins.medioDePago.MedioDePago" relationship="DEPENDENCY">
+      <point x="35.125" y="-127.0" />
+      <point x="175.625" y="473.0" />
+      <point x="143.53943452380952" y="473.0" />
+      <point x="-88.66666666666667" y="27.5" />
+    </edge>
+    <edge source="com.macowins.Venta" target="com.macowins.prendas.Prenda" relationship="TO_MANY">
+      <point x="-105.375" y="-127.0" />
+      <point x="35.125" y="473.0" />
+      <point x="77.7061011904762" y="473.0" />
+      <point x="77.7061011904762" y="357.0" />
+      <point x="232.6875" y="357.0" />
+      <point x="-59.5" y="116.0" />
+    </edge>
+    <edge source="com.macowins.medioDePago.Tarjeta" target="com.macowins.medioDePago.MedioDePago" relationship="REALIZATION">
+      <point x="66.5" y="-50.0" />
+      <point x="512.9375" y="473.0" />
+      <point x="589.4375" y="473.0" />
+      <point x="589.4375" y="463.0" />
+      <point x="320.8727678571429" y="463.0" />
+      <point x="88.66666666666666" y="27.5" />
+    </edge>
+    <edge source="com.macowins.medioDePago.Efectivo" target="com.macowins.prendas.Prenda" relationship="DEPENDENCY">
+      <point x="66.5" y="-27.5" />
+      <point x="798.9375" y="473.0" />
+      <point x="737.6875" y="473.0" />
+      <point x="737.6875" y="367.0" />
+      <point x="354.2686011904762" y="367.0" />
+      <point x="354.2686011904762" y="357.0" />
+      <point x="351.6875" y="357.0" />
+      <point x="59.5" y="116.0" />
+    </edge>
+    <edge source="com.macowins.prendas.Prenda" target="com.macowins.prendas.estados.EstadoPrenda" relationship="TO_ONE">
+      <point x="-59.5" y="-116.0" />
+      <point x="232.6875" y="85.0" />
+      <point x="251.1875" y="85.0" />
+      <point x="-82.0" y="27.5" />
+    </edge>
+    <edge source="com.macowins.prendas.Prenda" target="com.macowins.prendas.estados.EstadoPrenda" relationship="DEPENDENCY">
+      <point x="59.5" y="-116.0" />
+      <point x="351.6875" y="85.0" />
+      <point x="333.1875" y="85.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.macowins.Tienda" target="com.macowins.Venta" relationship="TO_MANY">
+      <point x="-59.5" y="-61.0" />
+      <point x="81.0" y="773.0" />
+      <point x="70.25" y="773.0" />
+      <point x="-70.25" y="127.0" />
+    </edge>
+    <edge source="com.macowins.medioDePago.Tarjeta" target="com.macowins.prendas.Prenda" relationship="DEPENDENCY">
+      <point x="-66.5" y="-50.0" />
+      <point x="379.9375" y="473.0" />
+      <point x="441.1875" y="473.0" />
+      <point x="441.1875" y="367.0" />
+      <point x="354.2686011904762" y="367.0" />
+      <point x="354.2686011904762" y="357.0" />
+      <point x="351.6875" y="357.0" />
+      <point x="59.5" y="116.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.1375334887271638" showDependencies="true" x="399.954719020384" y="258.4562264654542" />
+  <SelectedNodes>
+    <node>com.macowins.prendas.Prenda</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
