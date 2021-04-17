@@ -1,0 +1,68 @@
+@startuml
+
+class Tienda {
+    gananciasDelDia(dia)
+}
+
+class Venta {
+    getTotalVenta()
+}
+
+class Item {
+    getTotal()
+}
+
+class Prenda {
+    getPrecioFinal()
+}
+
+enum TipoDePrenda{
+PANTALON
+SACO
+CAMISA
+}
+
+interface EstadoPrenda {
+    modificarPrecio(valor)
+}
+
+class Liquidacion {
+    modificarPrecio(valor)
+}
+
+class Nuevo {
+    modificarPrecio(valor)
+}
+
+class Promocion {
+    modificarPrecio(valor)
+}
+
+abstract class MedioDePago {
+aplicarRecargo(item)
+}
+
+class Tarjeta{
+aplicarRecargo(item)
+}
+
+class Efectivo {
+}
+
+Tienda --> Venta
+Venta --> Item
+Item --> Prenda
+
+Venta --> MedioDePago
+
+Prenda --> EstadoPrenda
+Prenda --> TipoDePrenda
+
+EstadoPrenda <|.. Liquidacion
+EstadoPrenda <|.. Promocion
+EstadoPrenda <|.. Nuevo
+
+MedioDePago <|-- Tarjeta
+MedioDePago <|-- Efectivo
+
+@enduml
