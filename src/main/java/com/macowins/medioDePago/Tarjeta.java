@@ -1,10 +1,10 @@
 package com.macowins.medioDePago;
 
-import com.macowins.prendas.Prenda;
+import com.macowins.Item;
 
 import java.util.List;
 
-public class Tarjeta implements MedioDePago{
+public class Tarjeta extends MedioDePago{
   private int cantidadCuotas;
   private double recargo;
 
@@ -13,9 +13,8 @@ public class Tarjeta implements MedioDePago{
     this.recargo = recargo;
   }
 
-  @Override
-  public double calcularTotal(List<Prenda> prendas) {
-    return cantidadCuotas * recargo + prendas.stream()
-        .map(prenda -> prenda.getValor() + 0.01).reduce(0.0, Double::sum);
+  // (cantidad de cuotas * un coeficiente fijo + 0.01 del valor de cada prenda).
+  public double aplicarRecargo(Item item) {
+    return cantidadCuotas * (recargo + 0.01 * super.aplicarRecargo(item));
   }
 }

@@ -2,6 +2,7 @@ package com.macowins;
 
 import java.util.Date;
 import java.util.List;
+import java.util.function.Predicate;
 
 public class Tienda {
   private List<Venta> ventas;
@@ -12,9 +13,13 @@ public class Tienda {
 
   public double gananciasDelDia(Date dia){
     return ventas.stream()
-        .filter(venta -> venta.getFecha().compareTo(dia) == 0)
+        .filter(esDeLaFecha(dia))
         .map(Venta::getTotalVenta)
         .reduce(0.0, Double::sum);
+  }
+
+  private Predicate<Venta> esDeLaFecha(Date dia) {
+    return venta -> venta.getFecha().compareTo(dia) == 0;
   }
 
   public List<Venta> getVentas() {

@@ -3,13 +3,18 @@ package com.macowins.prendas;
 import com.macowins.prendas.estados.EstadoPrenda;
 
 public class Prenda {
-  private double valor;
+  private double precio;
   private EstadoPrenda estado;
-  private String tipoDePrenda;
+  private TipoDePrenda tipoDePrenda;
 
-  public Prenda(double valor, EstadoPrenda estado) {
-    this.valor = valor;
+  public Prenda(double precio, EstadoPrenda estado, TipoDePrenda tipoDePrenda) {
+    this.precio = precio;
     this.estado = estado;
+    this.tipoDePrenda = tipoDePrenda;
+  }
+
+  public double getPrecioFinal() {
+    return this.estado.modificarPrecio(this.precio);
   }
 
   public EstadoPrenda getEstado() {
@@ -20,19 +25,19 @@ public class Prenda {
     this.estado = estado;
   }
 
-  public double getValor() {
-    return estado.modificarPrecio(valor);
+  public double getPrecio() {
+    return this.precio;
   }
 
-  public void setValor(double valor) {
-    this.valor = valor;
+  public void setPrecio(double precio) {
+    this.precio = precio;
   }
 
-  public String getTipoDePrenda() {
+  public TipoDePrenda getTipoDePrenda() {
     return tipoDePrenda;
   }
 
-  public void setTipoDePrenda(String tipoDePrenda) {
+  public void setTipoDePrenda(TipoDePrenda tipoDePrenda) {
     this.tipoDePrenda = tipoDePrenda;
   }
 }

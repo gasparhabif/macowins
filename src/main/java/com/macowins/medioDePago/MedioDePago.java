@@ -1,9 +1,9 @@
 package com.macowins.medioDePago;
 
-import com.macowins.prendas.Prenda;
+import com.macowins.Item;
 
-import java.util.List;
-
-public interface MedioDePago {
-  double calcularTotal(List<Prenda> prendas);
+public class MedioDePago {
+  public double aplicarRecargo(Item item) {
+    return item.getPrenda().getPrecioFinal();
+  };
 }
