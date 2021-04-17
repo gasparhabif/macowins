@@ -12,7 +12,7 @@ public class Venta {
 
   public Venta(List<Item> itemsComprados, Date fecha, MedioDePago medioDePago) {
     this.itemsComprados = itemsComprados;
-    this.fecha = fecha;
+    this.fecha = new Date(fecha.getTime());
     this.medioDePago = medioDePago;
   }
 
@@ -31,11 +31,11 @@ public class Venta {
   }
 
   public Date getFecha() {
-    return fecha;
+    return new Date(this.fecha.getTime());
   }
 
   public void setFecha(Date fecha) {
-    this.fecha = fecha;
+    this.fecha = new Date(fecha.getTime());
   }
 
   public MedioDePago getMedioDePago() {

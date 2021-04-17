@@ -90,7 +90,7 @@ public class MacowinsTests {
     public void unaVentaTieneItemsCompradosYMedioDePago() {
         assert unaVenta.getTotalVenta() == 50;
         assert unaVenta.getItemsComprados().size() == 2;
-        assert unaVenta.getFecha() == hoy;
+        assert unaVenta.getFecha().getTime() == hoy.getTime();
         assertSame(unaVenta.getMedioDePago().getClass(), Efectivo.class);
     }
 
