@@ -13,8 +13,9 @@ public class Tarjeta extends MedioDePago{
     this.recargo = recargo;
   }
 
-  // (cantidad de cuotas * un coeficiente fijo + 0.01 del valor de cada prenda).
+//  (cantidad de cuotas * un coeficiente fijo + 0.01 del valor de cada prenda)
   public double aplicarRecargo(Item item) {
-    return cantidadCuotas * (recargo + 0.01 * super.aplicarRecargo(item));
+    return (cantidadCuotas * recargo) +
+            (0.01 * super.aplicarRecargo(item) + super.aplicarRecargo(item));
   }
 }

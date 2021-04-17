@@ -1,5 +1,6 @@
 package com.macowins;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.function.Predicate;
@@ -7,8 +8,8 @@ import java.util.function.Predicate;
 public class Tienda {
   private List<Venta> ventas;
 
-  public Tienda(List<Venta> ventas) {
-    this.ventas = ventas;
+  public Tienda() {
+    this.ventas = new ArrayList<>();
   }
 
   public double gananciasDelDia(Date dia){
@@ -16,6 +17,10 @@ public class Tienda {
         .filter(esDeLaFecha(dia))
         .map(Venta::getTotalVenta)
         .reduce(0.0, Double::sum);
+  }
+
+  public void agregarVenta(Venta venta){
+    ventas.add(venta);
   }
 
   private Predicate<Venta> esDeLaFecha(Date dia) {

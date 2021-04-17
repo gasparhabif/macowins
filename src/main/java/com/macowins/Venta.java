@@ -18,7 +18,7 @@ public class Venta {
 
   public double getTotalVenta() {
     return this.itemsComprados.stream()
-        .map(item -> item.getTotal() + this.medioDePago.aplicarRecargo(item))
+        .map(item -> this.medioDePago.aplicarRecargo(item))
         .reduce(0.0, Double::sum);
   }
 
