@@ -1,6 +1,6 @@
-package com.macowins.prendas;
+package ar.edu.utn.frba.dds.macowins.prendas;
 
-import com.macowins.prendas.estados.EstadoPrenda;
+import ar.edu.utn.frba.dds.macowins.prendas.estados.EstadoPrenda;
 
 public class Prenda {
   private double precio;

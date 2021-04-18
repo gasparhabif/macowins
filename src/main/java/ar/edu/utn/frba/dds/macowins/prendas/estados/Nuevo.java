@@ -1,4 +1,4 @@
-package com.macowins.prendas.estados;
+package ar.edu.utn.frba.dds.macowins.prendas.estados;
 
 public class Nuevo implements EstadoPrenda {
   public Nuevo() {

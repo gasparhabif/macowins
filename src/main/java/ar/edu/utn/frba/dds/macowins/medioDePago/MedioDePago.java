@@ -1,6 +1,6 @@
-package com.macowins.medioDePago;
+package ar.edu.utn.frba.dds.macowins.medioDePago;
 
-import com.macowins.Item;
+import ar.edu.utn.frba.dds.macowins.Item;
 
 public class MedioDePago {
   public double aplicarRecargo(Item item) {

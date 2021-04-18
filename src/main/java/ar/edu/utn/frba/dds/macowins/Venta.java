@@ -1,6 +1,6 @@
-package com.macowins;
+package ar.edu.utn.frba.dds.macowins;
 
-import com.macowins.medioDePago.MedioDePago;
+import ar.edu.utn.frba.dds.macowins.medioDePago.MedioDePago;
 
 import java.util.Date;
 import java.util.List;

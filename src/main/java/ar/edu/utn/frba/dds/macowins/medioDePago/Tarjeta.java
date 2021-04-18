@@ -1,8 +1,6 @@
-package com.macowins.medioDePago;
+package ar.edu.utn.frba.dds.macowins.medioDePago;
 
-import com.macowins.Item;
-
-import java.util.List;
+import ar.edu.utn.frba.dds.macowins.Item;
 
 public class Tarjeta extends MedioDePago{
   private int cantidadCuotas;

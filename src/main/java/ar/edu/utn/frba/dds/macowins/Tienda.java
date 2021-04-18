@@ -1,4 +1,4 @@
-package com.macowins;
+package ar.edu.utn.frba.dds.macowins;
 
 import java.util.ArrayList;
 import java.util.Date;

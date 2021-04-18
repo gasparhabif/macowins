@@ -1,12 +1,12 @@
-package com.macowins;
+package ar.edu.utn.frba.dds.macowins;
 
-import com.macowins.medioDePago.Efectivo;
-import com.macowins.medioDePago.Tarjeta;
-import com.macowins.prendas.Prenda;
-import com.macowins.prendas.TipoDePrenda;
-import com.macowins.prendas.estados.Liquidacion;
-import com.macowins.prendas.estados.Nuevo;
-import com.macowins.prendas.estados.Promocion;
+import ar.edu.utn.frba.dds.macowins.medioDePago.Efectivo;
+import ar.edu.utn.frba.dds.macowins.medioDePago.Tarjeta;
+import ar.edu.utn.frba.dds.macowins.prendas.Prenda;
+import ar.edu.utn.frba.dds.macowins.prendas.TipoDePrenda;
+import ar.edu.utn.frba.dds.macowins.prendas.estados.Liquidacion;
+import ar.edu.utn.frba.dds.macowins.prendas.estados.Nuevo;
+import ar.edu.utn.frba.dds.macowins.prendas.estados.Promocion;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;

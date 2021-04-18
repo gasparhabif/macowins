@@ -1,6 +1,6 @@
-package com.macowins;
+package ar.edu.utn.frba.dds.macowins;
 
-import com.macowins.prendas.Prenda;
+import ar.edu.utn.frba.dds.macowins.prendas.Prenda;
 
 public class Item {
   private Prenda prenda;
